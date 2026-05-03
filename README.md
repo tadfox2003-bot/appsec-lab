@@ -22,10 +22,10 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 - [ ] Deploy com **GitHub Pages**
       
 ## Como a pipeline funciona
-> Gitleaks: Varre o histórico de commits em busca de segredos (chaves, senhas) expostos. É vital para evitar vazamento de credenciais.
-> Semgrep (SAST): Analisa o código-fonte estático procurando padrões de código inseguro (vulnerabilidades de lógica).
-> Grype (SCA): Analisa as dependências (bibliotecas de terceiros) para garantir que não estamos usando pacotes com vulnerabilidades conhecidas.
-> Deploy: Só é executado se todos os passos anteriores passarem, garantindo que apenas código seguro vá para produção.
+-  Gitleaks: Varre o histórico de commits em busca de segredos (chaves, senhas) expostos. É vital para evitar vazamento de credenciais.
+- Semgrep (SAST): Analisa o código-fonte estático procurando padrões de código inseguro (vulnerabilidades de lógica).
+- Grype (SCA): Analisa as dependências (bibliotecas de terceiros) para garantir que não estamos usando pacotes com vulnerabilidades conhecidas.
+- Deploy: Só é executado se todos os passos anteriores passarem, garantindo que apenas código seguro vá para produção.
 
 ## O uso de .innerHTML com dados não confiáveis é uma causa comum de ataques Cross-Site Scripting (XSS) baseados no DOM (DOM XSS). Riscos incluem roubo de cookies/sessões, sequestro de contas, desfiguração de sites e injeção de scripts maliciosos que executam no navegador da vítima, burlando a política de mesma origem.
 Riscos Principais de XSS
