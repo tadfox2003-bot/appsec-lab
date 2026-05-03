@@ -38,7 +38,7 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 
 ## Por que o .innerHTML é Perigoso.
 
-  Renderização de Script: O innerHTML interpreta tags HTML, incluindo <script> ou eventos como <img src=x onerror=...> (image). Se um atacante conseguir injetar esse HTML, o JavaScript malicioso será executado.
+  Renderização de Script: O innerHTML interpreta tags HTML, incluindo <script> ou eventos como <img src=x onerror=...> (imagem src=x onerror=). Se um atacante conseguir injetar esse HTML, o JavaScript malicioso será executado.
   XSS Baseado no DOM: O atacante usa o JavaScript do lado cliente para manipular dados do usuário (como URLs ou formulários) e inseri-los no DOM de forma insegura, sem passar pelo servidor.
 
 ## URL de Produção
